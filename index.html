@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>RP | Iniciar sesión</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/report.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section
+          class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4"
+        >
+          <div class="container">
+            <div class="row justify-content-center">
+              <div
+                class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="d-flex justify-content-center py-4">
+                  <a
+                    href="#"
+                    class="logo d-flex align-items-center w-auto"
+                  >
+                    <img
+                      src="assets/img/reports.png"
+                      alt=""
+                    />
+                    <span class="d-none d-lg-block">Reportes | PWA</span>
+                  </a>
+                </div>
+                <!-- End Logo -->
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="pt-4 pb-2">
+                      <h5 class="card-title text-center pb-0 fs-4">
+                        Inicia sesión
+                      </h5>
+                      <p class="text-center small">
+                        Ingresa tu usuario y contraseña
+                      </p>
+                    </div>
+
+                    <form
+                      class="row g-3 needs-validation"
+                      novalidate
+                      id="signinForm"
+                    >
+                      <div class="col-12">
+                        <label
+                          for="yourUsername"
+                          class="form-label"
+                          >Usuario</label
+                        >
+                        <input
+                          type="text"
+                          name="username"
+                          class="form-control"
+                          id="yourUsername"
+                          placeholder="mikemoreno"
+                          required
+                        />
+                        <div class="invalid-feedback">Campo obligatorio</div>
+                      </div>
+
+                      <div class="col-12">
+                        <label
+                          for="yourPassword"
+                          class="form-label"
+                          >Contraseña</label
+                        >
+                        <input
+                          type="password"
+                          name="password"
+                          placeholder="********"
+                          class="form-control"
+                          id="yourPassword"
+                          required
+                        />
+                        <div class="invalid-feedback">Campo obligatorio</div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn btn-primary w-100"
+                          type="submit"
+                        >
+                          Acceder
+                        </button>
+                      </div>
+                      <div class="col-12">
+                        <p class="small mb-0">
+                          ¿No tienes una cuenta?
+                          <a href="pages/register.html">Crea tu cuenta</a>
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- End #main -->
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/axios/axios-intance.js"></script>
+    <script src="/assets/js/toast/toasts.js"></script>
+    <script src="/assets/js/auth/signin.js"></script>
+  </body>
+</html>
